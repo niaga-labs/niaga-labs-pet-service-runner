@@ -54,19 +54,21 @@ func main() {
 	}
 
 	// Run database migrations.
-	if cfg.AppEnv == "development" {
-		if err := db.AutoMigrate(&repository.RunnerModel{}, &repository.CrateSpecModel{}, &repository.PetShopModel{}); err != nil {
-			zapLogger.Fatal("failed to auto-migrate", zap.Error(err))
-		}
-		zapLogger.Info("database migration completed (dev auto-migrate)")
+	//
+	// KPD-59: this used to AutoMigrate in development and run the SQL migrations
+	// everywhere else. pet_shops had no SQL migration, so it existed only in
+	// development. Now that 003_create_pet_shops covers it, every model in this
+	// service has a SQL migration -- so there is one path for all environments and
+	// the two can no longer drift apart. Development still gets its schema
+	// automatically, because the server applies the migrations at startup.
+	dbURL := dbConfig.DatabaseURL()
+	if err := database.RunMigrations(dbURL, "migrations", zapLogger); err != nil {
+		zapLogger.Fatal("failed to run migrations", zap.Error(err))
+	}
 
-		// Seed pet shops with sample data.
+	// Sample pet shops, for development only -- the directory is empty otherwise.
+	if cfg.AppEnv == "development" {
 		repository.SeedPetShops(db, zapLogger)
-	} else {
-		dbURL := dbConfig.DatabaseURL()
-		if err := database.RunMigrations(dbURL, "migrations", zapLogger); err != nil {
-			zapLogger.Fatal("failed to run migrations", zap.Error(err))
-		}
 	}
 
 	// Initialize JWT manager.
