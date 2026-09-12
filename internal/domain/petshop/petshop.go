@@ -140,7 +140,7 @@ func Reconstruct(
 
 // --- Getters ---
 
-func (s *PetShop) ID() uuid.UUID       { return s.id }
+func (s *PetShop) ID() uuid.UUID        { return s.id }
 func (s *PetShop) OwnerID() uuid.UUID   { return s.ownerID }
 func (s *PetShop) Name() string         { return s.name }
 func (s *PetShop) Address() string      { return s.address }

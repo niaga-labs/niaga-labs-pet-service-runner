@@ -17,13 +17,13 @@ func SeedPetShops(db *gorm.DB, logger *zap.Logger) {
 	}
 
 	type seedShop struct {
-		name, address                          string
-		lat, lng                               float64
-		phone, email                           string
-		category                               petshopDomain.Category
-		services                               []string
-		imageURL, openingHours, description    string
-		rating                                 float64
+		name, address                       string
+		lat, lng                            float64
+		phone, email                        string
+		category                            petshopDomain.Category
+		services                            []string
+		imageURL, openingHours, description string
+		rating                              float64
 	}
 
 	seeds := []seedShop{

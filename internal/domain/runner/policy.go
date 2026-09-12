@@ -3,10 +3,10 @@ package runner
 // BookingRequirements represents the requirements from a booking that must
 // be matched against a runner's capabilities.
 type BookingRequirements struct {
-	PetType      PetType
-	PetWeightKg  float64
-	CrateSize    CrateSize
-	NeedsAirCon  bool
+	PetType       PetType
+	PetWeightKg   float64
+	CrateSize     CrateSize
+	NeedsAirCon   bool
 	NeedsTempCtrl bool
 }
 
