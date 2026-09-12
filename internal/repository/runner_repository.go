@@ -8,8 +8,8 @@ import (
 	"github.com/google/uuid"
 	"gorm.io/gorm"
 
-	"github.com/Kilat-Pet-Delivery/lib-common/domain"
-	runnerDomain "github.com/Kilat-Pet-Delivery/service-runner/internal/domain/runner"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/domain"
+	runnerDomain "github.com/niaga-labs/niaga-labs-pet-service-runner/internal/domain/runner"
 )
 
 // RunnerModel is the GORM model for the runners table.
