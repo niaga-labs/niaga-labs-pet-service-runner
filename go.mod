@@ -1,10 +1,10 @@
-module github.com/Kilat-Pet-Delivery/service-runner
+module github.com/niaga-labs/niaga-labs-pet-service-runner
 
 go 1.24.0
 
 require (
-	github.com/Kilat-Pet-Delivery/lib-common v0.0.0
-	github.com/Kilat-Pet-Delivery/lib-proto v0.0.0
+	github.com/niaga-labs/niaga-labs-pet-lib-common v0.0.0
+	github.com/niaga-labs/niaga-labs-pet-lib-proto v0.0.0
 	github.com/gin-gonic/gin v1.11.0
 	github.com/google/uuid v1.6.0
 	go.uber.org/zap v1.27.1
@@ -71,6 +71,6 @@ require (
 )
 
 replace (
-	github.com/Kilat-Pet-Delivery/lib-common => ../lib-common
-	github.com/Kilat-Pet-Delivery/lib-proto => ../lib-proto
+	github.com/niaga-labs/niaga-labs-pet-lib-common => ../lib-common
+	github.com/niaga-labs/niaga-labs-pet-lib-proto => ../lib-proto
 )

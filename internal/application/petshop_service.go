@@ -6,9 +6,9 @@ import (
 	"github.com/google/uuid"
 	"go.uber.org/zap"
 
-	"github.com/Kilat-Pet-Delivery/lib-common/domain"
-	"github.com/Kilat-Pet-Delivery/lib-proto/dto"
-	petshopDomain "github.com/Kilat-Pet-Delivery/service-runner/internal/domain/petshop"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/domain"
+	"github.com/niaga-labs/niaga-labs-pet-lib-proto/dto"
+	petshopDomain "github.com/niaga-labs/niaga-labs-pet-service-runner/internal/domain/petshop"
 )
 
 // CreatePetShopRequest represents a request to create a pet shop.

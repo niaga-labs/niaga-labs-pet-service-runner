@@ -8,8 +8,8 @@ import (
 	"github.com/google/uuid"
 	"gorm.io/gorm"
 
-	"github.com/Kilat-Pet-Delivery/lib-common/domain"
-	petshopDomain "github.com/Kilat-Pet-Delivery/service-runner/internal/domain/petshop"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/domain"
+	petshopDomain "github.com/niaga-labs/niaga-labs-pet-service-runner/internal/domain/petshop"
 )
 
 // PetShopModel is the GORM model for the pet_shops table.

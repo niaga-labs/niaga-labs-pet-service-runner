@@ -12,17 +12,17 @@ import (
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 
-	"github.com/Kilat-Pet-Delivery/lib-common/auth"
-	"github.com/Kilat-Pet-Delivery/lib-common/database"
-	"github.com/Kilat-Pet-Delivery/lib-common/health"
-	"github.com/Kilat-Pet-Delivery/lib-common/kafka"
-	"github.com/Kilat-Pet-Delivery/lib-common/logger"
-	"github.com/Kilat-Pet-Delivery/lib-common/middleware"
-	"github.com/Kilat-Pet-Delivery/service-runner/internal/application"
-	svcConfig "github.com/Kilat-Pet-Delivery/service-runner/internal/config"
-	runnerDomain "github.com/Kilat-Pet-Delivery/service-runner/internal/domain/runner"
-	"github.com/Kilat-Pet-Delivery/service-runner/internal/handler"
-	"github.com/Kilat-Pet-Delivery/service-runner/internal/repository"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/auth"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/database"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/health"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/kafka"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/logger"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/middleware"
+	"github.com/niaga-labs/niaga-labs-pet-service-runner/internal/application"
+	svcConfig "github.com/niaga-labs/niaga-labs-pet-service-runner/internal/config"
+	runnerDomain "github.com/niaga-labs/niaga-labs-pet-service-runner/internal/domain/runner"
+	"github.com/niaga-labs/niaga-labs-pet-service-runner/internal/handler"
+	"github.com/niaga-labs/niaga-labs-pet-service-runner/internal/repository"
 )
 
 func main() {

@@ -8,7 +8,7 @@ import (
 	"github.com/google/uuid"
 	"gorm.io/gorm"
 
-	runnerDomain "github.com/Kilat-Pet-Delivery/service-runner/internal/domain/runner"
+	runnerDomain "github.com/niaga-labs/niaga-labs-pet-service-runner/internal/domain/runner"
 )
 
 // CrateSpecModel is the GORM model for the crate_specs table.

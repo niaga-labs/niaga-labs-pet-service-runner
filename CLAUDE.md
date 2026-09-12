@@ -1,7 +1,7 @@
 # Kilat Pet Delivery - service-runner
 
 Runner profiles, vehicle and crate capabilities, PostGIS proximity search, and the pet-shop directory.
-Jira project **KPD** - GitHub `Kilat-Pet-Delivery/service-runner` - stack **Go 1.24 - Gin - GORM - PostgreSQL - Kafka**. Global rules live in `~/.claude/`;
+Jira project **KPD** - GitHub `niaga-labs/niaga-labs-pet-service-runner` - stack **Go 1.24 - Gin - GORM - PostgreSQL - Kafka**. Global rules live in `~/.claude/`;
 this file only adds what is specific here.
 
 ## Orient here first

@@ -5,10 +5,10 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/Kilat-Pet-Delivery/lib-common/auth"
-	"github.com/Kilat-Pet-Delivery/lib-common/middleware"
-	"github.com/Kilat-Pet-Delivery/lib-common/response"
-	"github.com/Kilat-Pet-Delivery/service-runner/internal/application"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/auth"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/middleware"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/response"
+	"github.com/niaga-labs/niaga-labs-pet-service-runner/internal/application"
 )
 
 // RunnerHandler handles HTTP requests for runner operations.

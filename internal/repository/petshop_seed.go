@@ -4,7 +4,7 @@ import (
 	"go.uber.org/zap"
 	"gorm.io/gorm"
 
-	petshopDomain "github.com/Kilat-Pet-Delivery/service-runner/internal/domain/petshop"
+	petshopDomain "github.com/niaga-labs/niaga-labs-pet-service-runner/internal/domain/petshop"
 )
 
 // SeedPetShops inserts sample pet shops if the table is empty.

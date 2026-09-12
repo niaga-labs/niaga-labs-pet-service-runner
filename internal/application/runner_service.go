@@ -8,11 +8,11 @@ import (
 	"github.com/google/uuid"
 	"go.uber.org/zap"
 
-	"github.com/Kilat-Pet-Delivery/lib-common/domain"
-	"github.com/Kilat-Pet-Delivery/lib-common/kafka"
-	"github.com/Kilat-Pet-Delivery/lib-proto/dto"
-	"github.com/Kilat-Pet-Delivery/lib-proto/events"
-	runnerDomain "github.com/Kilat-Pet-Delivery/service-runner/internal/domain/runner"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/domain"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/kafka"
+	"github.com/niaga-labs/niaga-labs-pet-lib-proto/dto"
+	"github.com/niaga-labs/niaga-labs-pet-lib-proto/events"
+	runnerDomain "github.com/niaga-labs/niaga-labs-pet-service-runner/internal/domain/runner"
 )
 
 // RegisterRunnerRequest holds data for registering a new runner.
